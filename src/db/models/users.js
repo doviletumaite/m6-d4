@@ -3,7 +3,7 @@ import sequelize from "../index.js";
 import s from "sequelize";
 const { DataTypes } = s;
 
-const Category = sequelize.define("user", {
+const user = sequelize.define("user", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -37,4 +37,4 @@ const Category = sequelize.define("user", {
     timestamps: false,
   });
 
-export default Category;
+export default user;
